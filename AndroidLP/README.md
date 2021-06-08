@@ -38,7 +38,10 @@ You need at least one bucket to upload your image and same recommendation folder
 
 ![GCP Bucket](https://i.imgur.com/sGJztA8.png)
 
-### Upload Image
+### Upload Image to bucket
+
+
+### Retrieve JSON file from cloud
 
 
 
