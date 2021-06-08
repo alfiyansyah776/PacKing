@@ -62,7 +62,7 @@ Your database can be used to store user data such as email and passwords, as wel
 
 For storage of machine learning models and application images, such as photos from users, as well as images of design recommendations we use Cloud Storage.
 
-**1. To get started, you can head to the Google Cloud Console and create a new bucket.**
+**1. To get started, you can head to the Google Cloud Console and create a new bucket in Cloud Storage.**
 
 ![bucket](https://i.ibb.co/z4879ct/bucket.png)
 
