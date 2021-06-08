@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PacKing</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="regis">Register yuk!</string>
+    <string name="q1">Kamu bukan member ya?</string>
+    <string name="username">Username</string>
+    <string name="sign_up"><u>Sign Up</u></string>
+    <string name="login_with_underline"><u>Login</u></string>
+    <string name="setting">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="LogOut">Log Out</string>
+</resources>

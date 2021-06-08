@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.ProfilFragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Top"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/gradient" />
+
+    <RelativeLayout
+        android:id="@+id/profileContainer"
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/Top"
+        android:layout_marginTop="-140dp"
+        android:background="@drawable/shape"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tvusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="IKM Mart Tulunggagung"
+            android:layout_marginTop="70dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tvusername"
+            android:textSize="16sp"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:text="ikmtulunggagung@gmail.com" />
+
+
+        <TextView
+            android:id="@+id/tveditprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvemail"
+            android:layout_marginTop="45dp"
+            android:text="Edit Profile"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/black"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/btnedtprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tveditprofile"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_below="@+id/tvemail"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="45dp" />
+
+        <TextView
+            android:id="@+id/tvchangepassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tveditprofile"
+            android:text="Change Password"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginStart="25dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tvchangepassword"
+            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_below="@id/tveditprofile"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="142dp" />
+
+        <TextView
+            android:id="@+id/signout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvchangepassword"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:text="Sign Out"
+            android:fontFamily="@font/montserrat"
+            android:textSize="16sp"
+            android:textColor="@color/red"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/photoContainer"
+        android:layout_width="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="150dp"
+        android:layout_above="@id/profileContainer"
+        android:layout_marginBottom="40dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
