@@ -72,6 +72,53 @@ Note: For machine learning model storage buckets that you will use on the AI pla
 
 ![createbucket](https://i.ibb.co/jLzbj4k/create-bucket.png)
 
+## Deploy the Machine Learning Models
+ 
+To deploy machine learning, we use Vertex AI. The reason we use Vertex AI is because it can accept custom trained models and can easily manage its endpoints.
 
+**1. To get started, you can go to the Console and enable the Vertex AI Platform.**
 
+![enablev](https://i.ibb.co/sj7jNVn/enable.png)
 
+**2. Then in the sidebar, select models and select Import model.**
+
+![models](https://i.ibb.co/YjKpHsc/models.png)
+
+![import](https://i.ibb.co/b2PLmv9/import.png)
+
+**3. Then set the model settings according to your needs, then click "Import".**
+Note: If you want to import models from Cloud Storage, make sure you select the same region as your Storage.
+
+![setmodel](https://i.ibb.co/M92HQsq/set1.png)
+
+![setmodel2](https://i.ibb.co/mHVG7mL/set2.png)
+
+**4. After the model imported, you will need to create enpoint to deploy your model. Click deploy to endpoint to start creating new endpoint.**
+
+![endpoint](https://i.ibb.co/QkL21tH/endpoint.png)
+
+**5. Then set the endpoint settings according to your needs, then click "DEPLOY", and your model is ready.**
+
+![deploy1](https://i.ibb.co/XpYJVNS/deploy1.png)
+
+![deploy2](https://i.ibb.co/R2WrrGF/deploy2.png)
+
+## Create Cloud Function
+
+To run the AI model and give response to Android client, you will need to make a Cloud Function.
+
+**1. To get started, you can go to the console and enable the Cloud Function by Create a new function.**
+
+![create](https://i.ibb.co/zr6W87g/Create.png)
+
+**2. Then set the Cloud Function configuration according to your needs. In this project we use HTTP trigger and allow unauthenticated invocations.
+
+![conf](https://i.ibb.co/JCb2q6Y/conf.png)
+
+**3. Then for the Runtime, we add new variable that we will use in the function, named ENDPOINT_ID and the value is the endpoint id that you already created in the Vertex AI.**
+
+![runtime](https://i.ibb.co/nP6hTy7/runtime.png)
+
+**4. Then we will make our function. In this project we use Python 3.7 runtime. You can find the code and requirements for the function [Here](https://github.com/alfiyansyah776/PacKing/tree/main/CloudLP/Function). Then click "DEPLOY" and your Cloud Function is ready to use.** 
+
+![code](https://i.ibb.co/gJCxDyG/code.png)
