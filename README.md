@@ -3,5 +3,5 @@ PacKing is a smart platform that helps small medium enterprise reduce the produc
 
 ## README for respective Learning Path
 * Android Development : [AndroidLP](https://github.com/alfiyansyah776/PacKing/blob/main/AndroidLP/README.mdm "AndroidLP")
-* Machine Learning : [MachineLearningLP](http://github.com)
+* Machine Learning : [MachineLearningLP](https://github.com/alfiyansyah776/PacKing/tree/main/CloudLP)
 * Cloud Computing  : [CloudComputingLP](http://github.com)
