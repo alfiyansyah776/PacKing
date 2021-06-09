@@ -1,5 +1,11 @@
 # Cloud
 
+## Flow Diagram
+
+![diagram](https://i.ibb.co/B3xrsb4/Pac-King-FIX.png)
+
+<br/>
+
 ## Login Mechanism
 
 For Android login mechanism, we use Identity Platform from Google Cloud Platform connected via Firebase Authentication. <br/><br/>
