@@ -46,9 +46,27 @@ open the GCP bucket and upload that file image to the bucket. The function look 
 ![CODE](https://i.imgur.com/EaqGFl6.jpg)
 
 
-### Retrieve JSON file from cloud
+### Post JSON file to Deployed AI Model
+After upload image to the bucket, we need to upload a JSON file which contain an image URL from GCP bucket to deployed AI model, this process handled by 
+a POST function using volley in OnActiivityResult function, it looks like this :
+
+![CODE](https://i.imgur.com/IHuwFAu.jpg)
+
+with this code we get variable name "idRekomendasi", that variable is important to get recommendation design.
+
+
+### Get Recommended design from AI Model
+
+With variable idRekomendasi we can get the recommendation design by send that variable to RekomendasiActivity via intent. After that, idRekomendasi become the
+parameter to the function that retrieve the design recommendation. That function is in RekomendasiViewModel, it look like this :
+
+* Function in RekomendasiViewModel
+![CODE](![image](https://user-images.githubusercontent.com/61271864/121349653-fa13c400-c953-11eb-99fa-474dd0b3704b.png)
 
 
 
+* Function to get design recommendation
+
+![CODE](![image](https://user-images.githubusercontent.com/61271864/121349859-30514380-c954-11eb-8f2b-b3ee42689e28.png)
 
 
