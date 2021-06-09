@@ -75,6 +75,7 @@ For storage of machine learning models and application images, such as photos fr
 **2. Then set your bucket configuration according to your needs, then click create and your bucket is ready to use .**
 
 Note: For machine learning model storage buckets that you will use on the AI platform or Vertex AI, you must pay attention to the region of the bucket. To be able to upload models to the platform, the region of the bucket must match the region of the platform you set.
+You also need JSON key for Android, so the Android client can access the bucket. You can create a Service Account and import the JSON key to the Android.
 
 ![createbucket](https://i.ibb.co/jLzbj4k/create-bucket.png)
 
