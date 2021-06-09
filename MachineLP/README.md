@@ -66,7 +66,7 @@ How to train the model:
 3. To add our own classifier (fuly connected layer) to the end of InceptionV3. We need to add flatten layer, so we need to get the output of the last layer from inception
 ![flatten](https://i.ibb.co/7Spwcc7/jupy2.png)
 4. Build our own fully connected layer. In this project we add 5 layers with last layer is output layer which consist of 20 nodes.
-![fcl](https://i.ibb.co/VQTpdJT/jupy3.png)
+![fcl](https://i.ibb.co/LCV3BvZ/jupy3.png)
 5. Train the model with ImageDataGenerator. We train the model until 35 epochs and configure the parameters like in this image below
 ![fcl](https://i.ibb.co/TT1wpL4/jupy4.png)
 <br>We get 0,863 validation accuracy and around 0,88 training accuracy<br>
