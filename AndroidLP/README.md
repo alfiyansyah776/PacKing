@@ -61,6 +61,7 @@ With variable idRekomendasi we can get the recommendation design by send that va
 parameter to the function that retrieve the design recommendation. That function is in RekomendasiViewModel, it look like this :
 
 * Function in RekomendasiViewModel
+
 ![CODE](https://imgur.com/0vKtsq2.jpg)
 
 
