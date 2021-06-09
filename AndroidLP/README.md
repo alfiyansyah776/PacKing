@@ -40,6 +40,11 @@ You need at least one bucket to upload your image and same recommendation folder
 
 ### Upload Image to bucket
 
+To upload an image to bucket, we need google credential name GoogleMapDemo.json and a function name UploadImageHelper. That function has task to
+open the GCP bucket and upload that file image to the bucket. The function look like this :
+
+![CODE](https://i.imgur.com/EaqGFl6.jpg)
+
 
 ### Retrieve JSON file from cloud
 
