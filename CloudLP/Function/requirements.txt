@@ -1,0 +1,8 @@
+# Function dependencies, for example:
+# package>=version
+Flask==1.1.2
+requests==2.24.0
+google-cloud-aiplatform~=0.5.1
+tensorflow-cpu~=2.3.2
+Pillow==7.1.2
+numpy==1.19.5
